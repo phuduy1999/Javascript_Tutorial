@@ -330,10 +330,10 @@ console.log(title.includes('web'))
 //myMap()
 Array.prototype.map2 = function (callBack) {
     //this la courses
-    var arr=[];
-    for(var index in this){
-        if(this.hasOwnProperty(index)){
-            var newChange=callBack(this[index],index);
+    var arr = [];
+    for (var index in this) {
+        if (this.hasOwnProperty(index)) {
+            var newChange = callBack(this[index], index);
             arr.push(newChange);
         }
     }
@@ -351,26 +351,26 @@ var newCourses2 = courses.map2(function callBack(course, index) {
 console.log(newCourses2);
 
 //myForEach()
-Array.prototype.forEach2=function(callBack){
-    for(var index in this){
-        if(this.hasOwnProperty(index)){
-            callBack(this[index],index,this);
+Array.prototype.forEach2 = function (callBack) {
+    for (var index in this) {
+        if (this.hasOwnProperty(index)) {
+            callBack(this[index], index, this);
         }
     }
 }
 
-courses.length=100;//test case
+courses.length = 100;//test case
 
-courses.forEach2(function callBack(course,index,array){
+courses.forEach2(function callBack(course, index, array) {
     console.log(course);
 })
 
 //myFilter()
-Array.prototype.filter2=function(callBack){
-    var outPut=[];
-    for(var i in this){
-        if(this.hasOwnProperty(i)){
-            if(callBack(this[i],i)){
+Array.prototype.filter2 = function (callBack) {
+    var outPut = [];
+    for (var i in this) {
+        if (this.hasOwnProperty(i)) {
+            if (callBack(this[i], i)) {
                 outPut.push(this[i]);
             }
         }
@@ -378,34 +378,34 @@ Array.prototype.filter2=function(callBack){
     return outPut;
 }
 
-var outPut=courses.filter2(function(course,index){
-    return course.name==='ruby';
+var outPut = courses.filter2(function (course, index) {
+    return course.name === 'ruby';
 })
 
 console.log(outPut);
 
 //mySome()
-Array.prototype.some2=function(callBack){
-    for(var i in this){
-        if(this.hasOwnProperty(i)){
-            return callBack(this[i],i);
+Array.prototype.some2 = function (callBack) {
+    for (var i in this) {
+        if (this.hasOwnProperty(i)) {
+            return callBack(this[i], i);
         }
     }
 }
 
-var boolean_OutPut=courses.some2(function(course,index){
-    return course.coin===0;
+var boolean_OutPut = courses.some2(function (course, index) {
+    return course.coin === 0;
 })
 
 console.log(boolean_OutPut);
 
 //myEvery()
-Array.prototype.every2=function(callBack){
-    var flag=true;
-    for(var i in this){
-        if(this.hasOwnProperty(i)){
-            if(callBack(this[i],i)===false){
-                flag=false;
+Array.prototype.every2 = function (callBack) {
+    var flag = true;
+    for (var i in this) {
+        if (this.hasOwnProperty(i)) {
+            if (callBack(this[i], i) === false) {
+                flag = false;
                 break;
             }
         }
@@ -413,8 +413,8 @@ Array.prototype.every2=function(callBack){
     return flag;
 }
 
-var boolean_OutPut=courses.every2(function(course,index){
-    return course.coin===0;
+var boolean_OutPut = courses.every2(function (course, index) {
+    return course.coin === 0;
 })
 
 console.log(boolean_OutPut);
