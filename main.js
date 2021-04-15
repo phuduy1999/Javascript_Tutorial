@@ -418,3 +418,132 @@ var boolean_OutPut = courses.every2(function (course, index) {
 })
 
 console.log(boolean_OutPut);
+
+var d = document.querySelector('input[type="checkbox"][checked][disabled]')
+console.log(d)
+
+//DOM elements
+var listItems = document.getElementsByTagName('ul');
+var listItems1 = listItems[0].querySelectorAll('li');
+console.log(listItems1)
+
+//DOM attributes
+var headingElement = document.querySelector('h1');
+
+//co them them atrributes ko hop le
+headingElement.setAttribute('href', 'heading')
+console.log(headingElement.getAttribute('href'))
+
+//chi atrribute hop le
+headingElement.title = 'test'
+console.log(headingElement.title)
+
+headingElement.className = 'parent'
+
+//innerText, textContent
+var h1Element = document.querySelector('h1')
+
+console.log(h1Element.innerHTML)
+console.log(h1Element.textContent)
+
+h1Element.innerText = 'New Javascript'
+
+//innerText get ve nhung gi ta thay tren trinh duyet, set dung nhung gi ta set
+//textContent get ve tat ca textNode nam trong the script,style,...; set tu dong bo khoang trang
+
+//innerHTML, outerHTML
+var boxElement = document.querySelector('.box')
+
+//ghi de ben trong the div.box
+boxElement.innerHTML = '<h1 title="Heading">New Heading</h1>';
+
+console.log(boxElement.innerHTML)
+
+//ghi de toan bo ke ca the div
+//boxElement.outerHTML='<span>Test</span>'
+
+console.log(boxElement.outerHTML)
+
+console.log([boxElement]) //bo vao array se the hien cac thuoc tinh cua object
+
+//nextElementSibling lay element tiep theo
+
+//nodeType check 1 la element node, 2 la attributes node,3 la text node
+
+//DOM CSS
+console.log(boxElement.style)
+
+Object.assign(boxElement.style, {
+    with: '200px',
+    height: '100px',
+    backgroundColor: 'green',
+})
+
+boxElement.style.backgroundColor
+
+//classList
+
+boxElement.classList.add('box-1')
+
+setTimeout(() => {
+    boxElement.classList.remove('box-1')
+}, 3000)
+
+setInterval(() => {
+    boxElement.classList.toggle('red')
+}, 1000)
+
+console.log(boxElement.classList.contains('box'))
+
+//DOM events
+var h3Elements = document.querySelectorAll('h3');
+
+for (var x in h3Elements) {
+    h3Elements[x].onclick = function (e) {
+        console.log(e.target)
+    }
+}
+
+var inputElement=document.querySelector('input[type="text"]')
+
+//onchange bam chuot ra ngoai moi bat su kien
+//oninput bat su kien luc dang nhap
+inputElement.oninput=function(e){
+    console.log(e.target.value)
+}
+
+var inputElement1=document.querySelector('input[type="checkbox"][name="event"]')
+
+inputElement1.oninput=function(e){
+    console.log(e)
+}
+
+inputElement.onkeyup=function(e){
+    console.log(e.which)
+
+    switch(e.which){
+        case 27:{
+            console.log('exit')
+            break;
+        }
+    }
+}
+
+document.onkeyup=function(e){
+    console.log(e)
+    switch(e.which){
+        case 27:{
+            console.log('EXIT')
+            break;
+        }
+    }
+}
+
+//preventDefault
+//stopPropagation
+
+//document.anchors: lay tat ca the a co name attr
+//document.links: lay tat ca the a
+var aElements=document.links;
+
+console.log(aElements)

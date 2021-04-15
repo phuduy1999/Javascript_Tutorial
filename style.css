@@ -1,0 +1,15 @@
+input[type="checkbox"][checked]:not([disabled]){
+    color: pink;
+}
+
+/* ul.parent>li, ul.parent>ul>li{
+    color: yellow;
+} */
+
+.parent{
+    color: red;
+}
+
+.red{
+    color: red;
+}
