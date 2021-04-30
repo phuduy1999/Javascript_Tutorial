@@ -547,3 +547,190 @@ document.onkeyup=function(e){
 var aElements=document.links;
 
 console.log(aElements)
+
+for(var i=0;i<aElements.length;i++){
+    aElements[i].onclick=function(e){
+        console.log(e.target)
+        if(!e.target.href.startsWith('https:f8.edu.vn')){
+            e.preventDefault();
+        }
+    }
+}
+
+var ulElement=document.querySelector('#list')
+
+ulElement.onmousedown=function(e){
+    e.preventDefault(); //ngăn chặn hành vi mặc định
+}
+
+ulElement.onclick=function(e){
+    console.log(e.target)
+}
+
+var divElement=document.querySelector('#try')
+
+divElement.onclick=function(e){
+    console.log('DIV')
+}
+
+var btnElement=document.querySelector('button');
+
+btnElement.onclick=function(e){
+    e.stopPropagation(); //để ko bắt sự kiện nổi bọt, đặt ở element con
+    console.log('click me')
+}
+
+//event listener
+
+var btnElement=document.querySelector('#btn')
+
+function viec1(){
+    console.log('viec 1')
+}
+
+function viec2(){
+    console.log('viec 2')
+}
+
+btnElement.addEventListener('click',viec1)
+btnElement.addEventListener('click',viec2)
+
+setTimeout(function(){
+    btnElement.removeEventListener('click',viec1)
+},3000)
+
+//JSON
+//stringify: Javascript types -> JSON
+//parse: JSON -> Javascript types
+
+var obj={
+    'name': 'duy',
+    'age':18
+}
+
+console.log(JSON.stringify(obj))
+
+var json='["PHP","JS","JAVA"]'
+
+console.log(JSON.parse(json))
+
+//Promise
+//1. khoi tao new Promise
+//2. Excutor
+
+//memory leak neu ko co resolve||reject
+
+//3 trang thai
+//1. Pendding : wait-> memory leak
+//2. Fulfilled - thanh cong
+//3. Rejected - that bai
+
+var promise=new Promise(
+    //Excutor
+    function(resolve,reject){
+        resolve();
+    }
+);
+
+promise
+    .then(function(){
+        return new Promise(
+            function(resolve){
+                setTimeout(function(){
+                    resolve([1,2,3])
+                },3000);
+            }
+        )
+    })
+    .then(function(data){
+        console.log(data)
+    })
+    .catch(function(error){
+        console.log(error)
+        console.log('Failure!')
+    })
+    .finally(function(){
+        console.log('Done!')
+    });
+
+//sau 1s in ra 1,2,3
+
+function sleep(ms){
+    return new Promise(
+        function(resolve){
+            setTimeout(resolve,ms);
+        }
+    )
+}
+
+//khi return 1 promise .then ke tiep phai cho
+//sau khi tra ve promise moi thuc thi
+//.then dang sau khi return 1 promise moi
+//la xu ly cho promise moi dc tra ve
+
+sleep(1000)
+    .then(function(){
+        console.log(1);
+        return sleep(1000);
+    })
+    .then(function(){
+        console.log(2);
+        return sleep(1000);
+    })
+    .then(function(){
+        console.log(3);
+        return new Promise(
+            function(resolve,reject){
+                reject('co loi')
+            }
+        )
+    })
+    .then(function(){
+        console.log(4);
+        return sleep(1000);
+    })
+    .catch(function(err){
+        console.log(err)
+    });
+
+var promise1=new Promise(
+    function(resolve){
+        setTimeout(function(){
+            resolve([1])
+        },2000);
+    }
+)
+
+var promise2=new Promise(
+    function(resolve){
+        setTimeout(function(){
+            resolve([2,3])
+        },5000);
+    }
+)
+
+var promise3=new Promise(
+    function(resolve){
+        setTimeout(function(){
+            resolve([4,5,6])
+        },5000);
+    }
+)
+
+Promise.all([promise1,promise2])
+    .then(function([result1,result2]){
+        /*var result1=result[0];
+        var result2=result[1];*/
+        console.log(result1.concat(result2));
+    });
+
+//neu co 1 promise loi se .catch (hong het viec)
+Promise.all([promise1,promise2,promise3])
+    .then(function(result){
+        var flatArray=result.reduce(function(accumulator,currentValue){
+            return accumulator.concat(currentValue);
+        },[]);
+        console.log(flatArray);
+    });
+
+//Promise Example

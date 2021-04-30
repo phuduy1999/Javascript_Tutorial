@@ -13,3 +13,11 @@ input[type="checkbox"][checked]:not([disabled]){
 .red{
     color: red;
 }
+
+ul#list{
+    display: none;
+}
+
+#search:focus ~ #list{
+    display: block;
+}
