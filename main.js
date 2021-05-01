@@ -194,6 +194,7 @@ function findEqualValues(array1, array2) {
 console.log(findEqualValues(arr1, arr2))
 
 //map
+//return ve 1 mang array
 var newCourse = courses.map(function (course, index) {
     return {
         id: course.id,
