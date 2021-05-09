@@ -1,0 +1,187 @@
+<HOCVIEN>
+    <LOP>
+        <MALOP>ML01</MALOP>
+        <TENLOP>D117CQCP01-N</TENLOP>
+        <KHOA>
+            <MAKH>MK01</MAKH>
+            <TENKH>CNTT</TENKH>
+        </KHOA>
+    </LOP>
+
+    <LICHTHI_CHITIET>
+        <LICHTHI>
+            <IDLT>LT01</IDLT>
+
+            <LOP>
+                <MALOP>ML01</MALOP>
+                <TENLOP>D117CQCP01-N</TENLOP>
+                <KHOA>
+                    <MAKH>MK01</MAKH>
+                    <TENKH>CNTT</TENKH>
+                </KHOA>
+            </LOP>
+
+            <MON_HOC>
+                <MA_MON>MM01</MA_MON>
+                <TEN_MON>AV</TEN_MON>
+                <TIET_LT>1</TIET_LT>
+                <TIET_BT>2</TIET_BT>
+                <TIET_TH>3</TIET_TH>
+            </MON_HOC>
+
+            <NHOM>02</NHOM>
+            <HOCKY>2</HOCKY>
+            <NIENKHOA>2017</NIENKHOA>
+            <DOT>1</DOT>
+            <LAN>2</LAN>
+
+            <GIANGVIEN>
+                <MA_GV>GV01</MA_GV>
+                <MA_BO_MON>BM01</MA_BO_MON>
+                <ID_HOC_VI>HV01</ID_HOC_VI>
+                <HO>NGUYEN</HO>
+                <TEN>DUY</TEN>
+                <NGAYSINH>02/01/1999</NGAYSINH>
+                <DIA_CHI>Q4</DIA_CHI>
+                <SDT>0968229526</SDT>
+                <CHUC_DANH>ABC</CHUC_DANH>
+                <MA_CHUC_VU>CV01</MA_CHUC_VU>
+                <GV_CO_HUU>ABC</GV_CO_HUU>
+                <PHAI_NAM>TRUE</PHAI_NAM>
+            </GIANGVIEN>
+
+            <NGAYTHI>05/05/2021</NGAYTHI>
+            <SODE>2</SODE>
+            <DONGIA_1DE>100000000</DONGIA_1DE>
+            <SOSV>50</SOSV>
+            <SOBAI>50</SOBAI>
+            <DONGIA_1BAI>100000000</DONGIA_1BAI>
+        </LICHTHI>
+
+        <PHONGHOC>
+            <PHONG>P01</PHONG>
+            <SOCHO>100</SOCHO>
+            <MOTA>ABC</MOTA>
+            <HOCLYTHUYET>ABC</HOCLYTHUYET>
+        </PHONGHOC>
+
+        <TIET_BD>1</TIET_BD>
+        <DONGIA_COITHI>100000000</DONGIA_COITHI>
+
+        <GIANGVIEN>
+            <MA_GV>GV01</MA_GV>
+            <MA_BO_MON>BM01</MA_BO_MON>
+            <ID_HOC_VI>HV01</ID_HOC_VI>
+            <HO>NGUYEN</HO>
+            <TEN>DUY</TEN>
+            <NGAYSINH>02/01/1999</NGAYSINH>
+            <DIA_CHI>Q4</DIA_CHI>
+            <SDT>0968229526</SDT>
+            <CHUC_DANH>ABC</CHUC_DANH>
+            <MA_CHUC_VU>CV01</MA_CHUC_VU>
+            <GV_CO_HUU>ABC</GV_CO_HUU>
+            <PHAI_NAM>TRUE</PHAI_NAM>
+        </GIANGVIEN>
+
+        <GIANGVIEN>
+            <MA_GV>GV02</MA_GV>
+            <MA_BO_MON>BM01</MA_BO_MON>
+            <ID_HOC_VI>HV01</ID_HOC_VI>
+            <HO>NGUYEN</HO>
+            <TEN>HUY</TEN>
+            <NGAYSINH>02/01/1999</NGAYSINH>
+            <DIA_CHI>Q4</DIA_CHI>
+            <SDT>0912345678</SDT>
+            <CHUC_DANH>ABC</CHUC_DANH>
+            <MA_CHUC_VU>CV01</MA_CHUC_VU>
+            <GV_CO_HUU>ABC</GV_CO_HUU>
+            <PHAI_NAM>TRUE</PHAI_NAM>
+        </GIANGVIEN>
+    </LICHTHI_CHITIET>
+
+    <LICHTHI>
+        <IDLT>LT01</IDLT>
+
+        <LOP>
+            <MALOP>ML01</MALOP>
+            <TENLOP>D117CQCP01-N</TENLOP>
+            <KHOA>
+                <MAKH>MK01</MAKH>
+                <TENKH>CNTT</TENKH>
+            </KHOA>
+        </LOP>
+
+        <MON_HOC>
+            <MA_MON>MM01</MA_MON>
+            <TEN_MON>AV</TEN_MON>
+            <TIET_LT>1</TIET_LT>
+            <TIET_BT>2</TIET_BT>
+            <TIET_TH>3</TIET_TH>
+        </MON_HOC>
+
+        <NHOM>02</NHOM>
+        <HOCKY>2</HOCKY>
+        <NIENKHOA>2017</NIENKHOA>
+        <DOT>1</DOT>
+        <LAN>2</LAN>
+
+        <GIANGVIEN>
+            <MA_GV>GV01</MA_GV>
+            <MA_BO_MON>BM01</MA_BO_MON>
+            <ID_HOC_VI>HV01</ID_HOC_VI>
+            <HO>NGUYEN</HO>
+            <TEN>DUY</TEN>
+            <NGAYSINH>02/01/1999</NGAYSINH>
+            <DIA_CHI>Q4</DIA_CHI>
+            <SDT>0968229526</SDT>
+            <CHUC_DANH>ABC</CHUC_DANH>
+            <MA_CHUC_VU>CV01</MA_CHUC_VU>
+            <GV_CO_HUU>ABC</GV_CO_HUU>
+            <PHAI_NAM>TRUE</PHAI_NAM>
+        </GIANGVIEN>
+
+        <NGAYTHI>05/05/2021</NGAYTHI>
+        <SODE>2</SODE>
+        <DONGIA_1DE>100000000</DONGIA_1DE>
+        <SOSV>50</SOSV>
+        <SOBAI>50</SOBAI>
+        <DONGIA_1BAI>100000000</DONGIA_1BAI>
+    </LICHTHI>
+
+    <DONGIA_CHAMBAI>
+        <MON_HOC>
+            <MA_MON>MM01</MA_MON>
+            <TEN_MON>AV</TEN_MON>
+            <TIET_LT>1</TIET_LT>
+            <TIET_BT>2</TIET_BT>
+            <TIET_TH>3</TIET_TH>
+        </MON_HOC>
+        <NGAYAPDUNG>06/05/2021</NGAYAPDUNG>
+        <DONGIA>10000000</DONGIA>
+    </DONGIA_CHAMBAI>
+
+    <DONGIA_RADE>
+        <MON_HOC>
+            <MA_MON>MM01</MA_MON>
+            <TEN_MON>AV</TEN_MON>
+            <TIET_LT>1</TIET_LT>
+            <TIET_BT>2</TIET_BT>
+            <TIET_TH>3</TIET_TH>
+        </MON_HOC>
+        <NGAYAPDUNG>06/05/2021</NGAYAPDUNG>
+        <DONGIA>10000000</DONGIA>
+    </DONGIA_RADE>
+
+    <DONGIA_COITHI>
+        <MON_HOC>
+            <MA_MON>MM01</MA_MON>
+            <TEN_MON>AV</TEN_MON>
+            <TIET_LT>1</TIET_LT>
+            <TIET_BT>2</TIET_BT>
+            <TIET_TH>3</TIET_TH>
+        </MON_HOC>
+        <NGAYAPDUNG>06/05/2021</NGAYAPDUNG>
+        <DG_TRONG_GIO>20000000000</DG_TRONG_GIO>
+        <DG_NGOAIGIO>30000000000</DG_NGOAIGIO>
+    </DONGIA_COITHI>
+</HOCVIEN>
